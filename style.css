@@ -1,0 +1,74 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Add this to position the red button within the body */
+}
+
+h1 {
+    color: red;
+    margin-top: 20px;
+    margin-bottom: auto; /* Adjust the margin as needed */
+}
+
+.center-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Welsh Corgi Please GIF by Lazy Corgi.gif');
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px; /* Push the GIF to the center */
+    margin-bottom: auto; /* Push the GIF to the center */
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+    position: relative; /* Add this to position the buttons within the container */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+button.yes {
+    background-color: green;
+    color: white;
+    margin-bottom: 200px;
+    margin-right: 50px;
+}
+
+button.no {
+    background-color: red;
+    color: white;
+    position: absolute; /* Add this to position the button absolutely */
+}
+
+.new-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.new-content img {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+}
+.changing-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(255, 0, 128);
+}
