@@ -1,74 +1,106 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    background-color: pink;
+    background: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100vh;
     margin: 0;
-    position: relative; /* Add this to position the red button within the body */
+    color: white;
 }
 
+/* Heading */
 h1 {
-    color: red;
-    margin-top: 20px;
-    margin-bottom: auto; /* Adjust the margin as needed */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff4b6e, #ff9a9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* GIF Container */
 .center-gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
     background-image: url('Welsh Corgi Please GIF by Lazy Corgi.gif');
-    width: 300px; /* Adjust the size as needed */
-    height: 300px; /* Adjust the size as needed */
     background-size: cover;
     background-position: center;
-    margin-top: 50px; /* Push the GIF to the center */
-    margin-bottom: auto; /* Push the GIF to the center */
+    box-shadow: 0 0 25px rgba(255, 75, 110, 0.4);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
 }
 
+.center-gif:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons container */
 .button-container {
-    margin-top: 20px; /* Adjust the margin as needed */
-    position: relative; /* Add this to position the buttons within the container */
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
+/* Base button style */
 button {
-    padding: 10px 20px;
+    padding: 12px 28px;
     font-size: 16px;
-    margin: auto;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
 }
 
+/* YES button */
 button.yes {
-    background-color: green;
-    color: white;
-    margin-bottom: 200px;
-    margin-right: 50px;
+    background: linear-gradient(45deg, #00c853, #69f0ae);
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 200, 83, 0.5);
 }
 
+button.yes:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* NO button */
 button.no {
-    background-color: red;
+    background: linear-gradient(45deg, #ff1744, #ff616f);
     color: white;
-    position: absolute; /* Add this to position the button absolutely */
+    position: absolute;
+    box-shadow: 0 0 15px rgba(255, 23, 68, 0.5);
 }
 
+button.no:hover {
+    transform: scale(1.05);
+}
+
+/* Changing text */
+.changing-text {
+    font-size: 1.2rem;
+    color: #ff6ec7;
+    margin-top: 15px;
+    opacity: 0.85;
+}
+
+/* New content */
 .new-content {
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 .new-content img {
-    width: 300px; /* Adjust the size as needed */
-    height: 300px; /* Adjust the size as needed */
-}
-.changing-text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: rgb(255, 0, 128);
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
 }
