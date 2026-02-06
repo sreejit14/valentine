@@ -20,9 +20,9 @@ document.querySelector('.yes').addEventListener('click', function() {
 });
 
 const texts = [
-    "erom korbi tui",
-    "dhorte parlonaa!",
-    "ebabaa!",
+    "eto bocchor hoye geche",
+    "are yawr!",
+    "keno korchis erom",
     "yes bole de na maaa",
     "ebar kende dbo"
 ];
